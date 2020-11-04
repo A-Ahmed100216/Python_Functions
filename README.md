@@ -1,5 +1,8 @@
 # Functions in Python
-This lesson will cover Python Functions
+### Objectives 
+* _**What are functions and why do we use them?**_
+* **_How to create a function_**
+* **_Best Practices_**
 
 ## What are functions and why are they useful?
 **DRY - Don't Repeat Yourself**
@@ -10,9 +13,10 @@ This lesson will cover Python Functions
 Syntax: 
 ```def <name_of_function>():```
 
-### Return statements
-* We use return statements to return the result of any function. 
+### Return 
+* We use the ```return``` keyword to return the result of any function. 
 * This is a keyword which stop the execution of the program. Return stores the value, but does not output to the console.
+* Therefore if we wish to view the output, we must enclose the function call in a print statement. 
 
 ### Example 1
 * Let's create a greeting function. This is one of the most basic functions, it prints "Welcome on board"
@@ -20,7 +24,7 @@ Syntax:
 def greeting():
     print("Welcome on board ")
 ```
-When we run this function, nothing happens. In order to execute a function, we must call it as shown:
+* When we run this function, nothing happens. In order to execute a function, we must call it as shown:
 ```python
 greeting()
 ```
@@ -53,7 +57,7 @@ add(2,2.3)
 add("str","ing")
 ```
 * We can repeat this process to carry out other arithmetic operators such as subtract, multiply, divide and calculate the remainder: 
-1. Subtract
+#### 1. Subtract
 ```python
 #  Creating a function to subtract 2 arguments
 def subtract(num1,num2):
@@ -61,21 +65,21 @@ def subtract(num1,num2):
 
 subtract(89,80)
 ```
-2. Multiply 
-```python
+#### 2. Multiply 
+ ```python
 # Create a function to multiply
 def multiply(num1, num2):
     return num1*num2
-```
+ ```
 * In this example, instead of using print, we have used return. 
 
-3. Divide 
+#### 3. Divide 
 ```python
 # Create a function to divide
 def divide(num1,num2):
     return num1/num2
 ```
-4. Remainder 
+#### 4. Remainder 
 ```python
 # Create a function to %
 def remainder(num1,num2):
@@ -95,12 +99,9 @@ print(divide(9,3)) # Prints 3
 print(remainder(14,3)) # Prints 2
 ```
 
-
-
-
-
 ## Best Practices
 * Have a small block of code in any function that does one job.
+* **KISS** - Keep it Simple Silly.
 * Use pseudocode - one line of explanation is sufficient.
 * HINTs: Create hints in simple bullet points.
-* Comments regarding your function results
+* Comment the results of your functions.
