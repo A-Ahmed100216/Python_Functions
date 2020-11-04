@@ -33,7 +33,7 @@ def subtract(num1,num2):
 subtract(89,80)
 
 
-# Practice Exericse-
+# Practice Exercise-
 # Create a function to multiply
 def multiply(num1, num2):
     # Instead of using print, we can use return. This is a keyword which stop the execution of the program. Return stores the value, but does not ouput to the console.
@@ -45,3 +45,5 @@ def divide(num1,num2):
 def remainder(num1,num2):
     return num1%num2
 
+multiply(5,3) # This won't print an output to the console
+print(multiply(5,3)) # This will
